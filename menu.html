@@ -7,6 +7,30 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+       .mastercard {
+        border: none;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .mastercard:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+      }
+
+      .mastercard img {
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .price-tag {
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: #212529;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top py-3">
@@ -48,167 +72,39 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
+   <section class="py-5">
       <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <h1 class="hero-title">Cita Rasa Autentik, Kualitas Premium</h1>
-            <p class="hero-sub">
-              Pempek Ameera hadir dengan perpaduan bahan berkualitas dan resep
-              khas untuk menciptakan rasa gurih, kenyal, dan nikmat yang sulit
-              dilupakan.
-            </p>
-            <div class="d-flex gap-3 flex-wrap">
-              <a href="menu.html" class="btn btn-dark-mono">Jelajahi Menu</a>
-              <a href="about.html" class="btn btn-outline-mono">Tentang Kami</a>
-            </div>
-          </div>
-          <div class="col-lg-2 col-0"></div>
-          <div class="col-lg-4">
-            <img
-              height="200"
-              src="assets/hero.jpeg"
-              alt="presentasi makanan pempek"
-              class="img-fluid rounded-4 shadow-sm"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery">
-      <div class="container">
-        <h2 class="section-title">Galeri</h2>
-        <div class="divider"></div>
-        <div class="row g-4">
-          <div class="col-6 col-md-4">
-            <img
-              src="assets/gallery-1.jpeg"
-              class="gallery-img"
-              alt="pempek ameera 1"
-            />
-          </div>
-          <div class="col-6 col-md-4">
-            <img
-              src="assets/gallery-2.jpeg"
-              class="gallery-img"
-              alt="pempek ameera 2"
-            />
-          </div>
-          <div class="col-6 col-md-4">
-            <img
-              src="assets/gallery-3.jpeg"
-              class="gallery-img"
-              alt="tekwan ameera"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Menu Section -->
-    <section id="menu">
-      <div class="container">
-        <h2 class="section-title">Menu</h2>
-        <div class="divider"></div>
-        <div class="table-responsive">
-          <table class="menu-table">
-            <thead>
-              <tr>
-                <th>Makanan</th>
-                <th class="text-end">Harga</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td colspan="2" class="fs-5">Pempek Kantin</td>
-              </tr>
-              <tr>
-                <td>Paket Komplit isi 4</td>
-                <td class="price-col">10k</td>
-              </tr>
-              <tr>
-                <td colspan="2" class="fs-5">Pempek Parang</td>
-              </tr>
-              <tr>
-                <td>Paket Komplit isi 4</td>
-                <td class="price-col">13k</td>
-              </tr>
-              <tr>
-                <td colspan="2" class="fs-5">Pempek Tenggiri</td>
-              </tr>
-              <tr>
-                <td>Paket Komplit isi 4</td>
-                <td class="price-col">20k</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="text-center mt-4">
-          <p class="text-muted small">* bisa take-away atau makan di tempat</p>
-          <a href="menu.html" class="btn btn-dark-mono">Lihat Lengkap</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimony Section -->
-    <section id="testimony">
-      <div class="container">
-        <h2 class="section-title">Testimoni</h2>
-        <div class="divider"></div>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="testimony-card">
-              <div class="d-flex align-items-center mb-3">
-                <div>
-                  <h6 class="mb-0 fw-bold">Septina Prasastia</h6>
+        <div class="mb-5 pb-4 mx-auto" style="max-width: 900px;">
+          <h3 class="fw-bold mb-4 text-center">Rekomendasi Spesial</h3>
+          <div class="row g-4">
+            <div class="col-12 col-md-6">
+              <div class="card mastercard shadow-sm h-100">
+                <img src="assets/gallery-1.jpeg" class="card-img-top" alt="Kapal Selam Spesial" onerror="this.src='https://via.placeholder.com/400x300?text=Pempek+Ameera'">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Kapal Selam Spesial</h5>
+                  <p class="card-text text-muted small">Pempek dengan isian telur utuh premium dipadu cuko khas.</p>
+                  <p class="price-tag mb-0">Rp 25.000</p>
                 </div>
               </div>
-              <p class="testimony-text">
-                "Mantap pempek nikmat... Mau makan sepuasnya sama kyk tahun
-                kmrin ah..."
-              </p>
-              <div class="text-warning small mt-2">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i>
-              </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="testimony-card">
-              <div class="d-flex align-items-center mb-3">
-                <div>
-                  <h6 class="mb-0 fw-bold">Fachriza Nurulzahra</h6>
+            <div class="col-12 col-md-6">
+              <div class="card mastercard shadow-sm h-100">
+                <img src="assets/gallery-2.jpeg" class="card-img-top" alt="Pempek Lenjer Besar" onerror="this.src='https://via.placeholder.com/400x300?text=Pempek+Ameera'">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Pempek Lenjer Besar</h5>
+                  <p class="card-text text-muted small">Dibuat dari ikan tenggiri asli dengan tekstur sangat kenyal.</p>
+                  <p class="price-tag mb-0">Rp 22.000</p>
                 </div>
               </div>
-              <p class="testimony-text">
-                "Pempek nya enak bangeeeett, beneran pempek asli palembang👍🏻"
-              </p>
-              <div class="text-warning small mt-2">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i>
-              </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="testimony-card">
-              <div class="d-flex align-items-center mb-3">
-                <div>
-                  <h6 class="mb-0 fw-bold">Muhammad Alvaro Afkar</h6>
+            <div class="col-12 col-md-6">
+              <div class="card mastercard shadow-sm h-100">
+                <img src="assets/gallery-3.jpeg" class="card-img-top" alt="Tekwan Ameera" onerror="this.src='https://via.placeholder.com/400x300?text=Pempek+Ameera'">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Tekwan Ameera</h5>
+                  <p class="card-text text-muted small">Sup khas Palembang dengan kaldu udang yang segar nan gurih.</p>
+                  <p class="price-tag mb-0">Rp 20.000</p>
                 </div>
-              </div>
-              <p class="testimony-text">
-                "alhamdulillah, seger cukonyo.. pempeknyo terjangkau dengan
-                dompet rasonyo maknyus"
-              </p>
-              <div class="text-warning small mt-2">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-half"></i>
               </div>
             </div>
           </div>
