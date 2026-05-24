@@ -86,7 +86,7 @@ section {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--border-light);
-  padding-top: 5rem;
+  padding-top: 7rem;
 }
 .hero-title {
   font-size: 3.8rem;
@@ -185,6 +185,9 @@ section {
   margin: 0.8rem 0 2rem;
 }
 @media (max-width: 768px) {
+  .hero-section {
+    padding-top: 10rem;
+  }
   .hero-title {
     font-size: 2.8rem;
   }
@@ -250,4 +253,39 @@ section {
 .contact-form textarea.form-control {
   min-height: 130px;
   resize: vertical;
+}
+
+/* Tentang Kami */
+.about-section {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-light);
+  padding-top: 7rem;
+}
+
+.about-text {
+  color: var(--mono-700);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.about-highlight {
+  font-weight: 600;
+  color: var(--mono-900);
+}
+
+.about-image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--mono-200);
+  text-align: end;
+}
+
+@media (max-width: 768px) {
+  .about-image {
+    height: 280px;
+    margin-top: 2rem;
+  }
 }
