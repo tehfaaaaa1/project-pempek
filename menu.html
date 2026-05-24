@@ -7,8 +7,34 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+       .mastercard {
+        border: none;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .mastercard:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+      }
+
+      .mastercard img {
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .price-tag {
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: #212529;
+      }
+    </style>
   </head>
   <body>
+
+     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top py-3">
       <div class="container">
         <a class="navbar-brand" href="index.html"
@@ -47,68 +73,49 @@
         </div>
       </div>
     </nav>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
+  
+   <!-- Menu Spesial -->
+   <section style="padding-top: 7rem;">
       <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <h1 class="hero-title">Cita Rasa Autentik, Kualitas Premium</h1>
-            <p class="hero-sub">
-              Pempek Ameera hadir dengan perpaduan bahan berkualitas dan resep
-              khas untuk menciptakan rasa gurih, kenyal, dan nikmat yang sulit
-              dilupakan.
-            </p>
-            <div class="d-flex gap-3 flex-wrap">
-              <a href="menu.html" class="btn btn-dark-mono">Jelajahi Menu</a>
-              <a href="about.html" class="btn btn-outline-mono">Tentang Kami</a>
+        <div class="mx-auto" style="max-width: 900px;">
+          <h3 class="fw-bold mb-4 text-center">Rekomendasi Spesial</h3>
+          <div class="row g-4">
+            <div class="col-12 col-md-6">
+              <div class="card mastercard shadow-sm h-100">
+                <img src="assets/gallery-1.jpeg" class="card-img-top" alt="Kapal Selam Spesial" onerror="this.src='https://via.placeholder.com/400x300?text=Pempek+Ameera'">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Kapal Selam Spesial</h5>
+                  <p class="card-text text-muted small">Pempek dengan isian telur utuh premium dipadu cuko khas.</p>
+                  <p class="price-tag mb-0">Rp 25.000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card mastercard shadow-sm h-100">
+                <img src="assets/gallery-2.jpeg" class="card-img-top" alt="Pempek Lenjer Besar" onerror="this.src='https://via.placeholder.com/400x300?text=Pempek+Ameera'">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Pempek Lenjer Besar</h5>
+                  <p class="card-text text-muted small">Dibuat dari ikan tenggiri asli dengan tekstur sangat kenyal.</p>
+                  <p class="price-tag mb-0">Rp 22.000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card mastercard shadow-sm h-100">
+                <img src="assets/gallery-3.jpeg" class="card-img-top" alt="Tekwan Ameera" onerror="this.src='https://via.placeholder.com/400x300?text=Pempek+Ameera'">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Tekwan Ameera</h5>
+                  <p class="card-text text-muted small">Sup khas Palembang dengan kaldu udang yang segar nan gurih.</p>
+                  <p class="price-tag mb-0">Rp 20.000</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-2 col-0"></div>
-          <div class="col-lg-4">
-            <img
-              height="200"
-              src="assets/hero.jpeg"
-              alt="presentasi makanan pempek"
-              class="img-fluid rounded-4 shadow-sm"
-            />
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery">
-      <div class="container">
-        <h2 class="section-title">Galeri</h2>
-        <div class="divider"></div>
-        <div class="row g-4">
-          <div class="col-6 col-md-4">
-            <img
-              src="assets/gallery-1.jpeg"
-              class="gallery-img"
-              alt="pempek ameera 1"
-            />
-          </div>
-          <div class="col-6 col-md-4">
-            <img
-              src="assets/gallery-2.jpeg"
-              class="gallery-img"
-              alt="pempek ameera 2"
-            />
-          </div>
-          <div class="col-6 col-md-4">
-            <img
-              src="assets/gallery-3.jpeg"
-              class="gallery-img"
-              alt="tekwan ameera"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Menu Section -->
+     <!-- Menu Section -->
     <section id="menu">
       <div class="container">
         <h2 class="section-title">Menu</h2>
@@ -123,95 +130,138 @@
             </thead>
             <tbody>
               <tr>
-                <td colspan="2" class="fs-5">Pempek Kantin</td>
+                <td colspan="2" class="fs-5 fw-bold pt-4">Pempek Kantin</td>
               </tr>
               <tr>
-                <td>Paket Komplit isi 4</td>
-                <td class="price-col">10k</td>
+                <td>Paket Komplit Isi 4</td>
+                <td class="price-col text-end">10k</td>
               </tr>
               <tr>
-                <td colspan="2" class="fs-5">Pempek Parang</td>
+                <td>Paket Komplit Isi 5</td>
+                <td class="price-col text-end">13k</td>
               </tr>
               <tr>
-                <td>Paket Komplit isi 4</td>
-                <td class="price-col">13k</td>
+                <td>Pempek Lenggang</td>
+                <td class="price-col text-end">15k</td>
+              </tr>
+
+              <tr>
+                <td colspan="2" class="fs-5 fw-bold pt-4">Pempek Parang</td>
               </tr>
               <tr>
-                <td colspan="2" class="fs-5">Pempek Tenggiri</td>
+                <td>Paket Komplit Isi 4</td>
+                <td class="price-col text-end">13k</td>
               </tr>
               <tr>
-                <td>Paket Komplit isi 4</td>
-                <td class="price-col">20k</td>
+                <td>Paket Komplit Isi 5</td>
+                <td class="price-col text-end">16k</td>
+              </tr>
+              <tr>
+                <td>Pempek Kapal Selam</td>
+                <td class="price-col text-end">17k</td>
+              </tr>
+              <tr>
+                <td>Pempek Lenjer Besar</td>
+                <td class="price-col text-end">16k</td>
+              </tr>
+              <tr>
+                <td>Pempek Lenggang</td>
+                <td class="price-col text-end">18k</td>
+              </tr>
+
+              <tr>
+                <td colspan="2" class="fs-5 fw-bold pt-4">Pempek Tenggiri</td>
+              </tr>
+              <tr>
+                <td>Paket Komplit Isi 4</td>
+                <td class="price-col text-end">20k</td>
+              </tr>
+              <tr>
+                <td>Paket Komplit Isi 5</td>
+                <td class="price-col text-end">25k</td>
+              </tr>
+              <tr>
+                <td>Pempek Satuan</td>
+                <td class="price-col text-end">6k</td>
+              </tr>
+              <tr>
+                <td>Pempek Kapal Selam</td>
+                <td class="price-col text-end">27k</td>
+              </tr>
+              <tr>
+                <td>Pempek Lenjer Besar</td>
+                <td class="price-col text-end">25k</td>
+              </tr>
+              <tr>
+                <td>Pempek Lenggang</td>
+                <td class="price-col text-end">27k</td>
+              </tr>
+
+              <tr>
+                <td colspan="2" class="fs-5 fw-bold pt-4">Menu Kuah</td>
+              </tr>
+              <tr>
+                <td>Tekwan</td>
+                <td class="price-col text-end">17k</td>
+              </tr>
+
+              <tr>
+                <td colspan="2" class="fs-5 fw-bold pt-4">Tekwan Frozen</td>
+              </tr>
+              <tr>
+                <td>Tekwan ORI Frozen</td>
+                <td class="price-col text-end">12k</td>
+              </tr>
+              <tr>
+                <td>Tekwan Komplit Frozen</td>
+                <td class="price-col text-end">15k</td>
+              </tr>
+
+              <tr>
+                <td colspan="2" class="fs-5 fw-bold pt-4">Pempek Frozen</td>
+              </tr>
+              <tr>
+                <td>Pempek Kantin 180 gr</td>
+                <td class="price-col text-end">10k</td>
+              </tr>
+              <tr>
+                <td>Pempek Parang 180 gr</td>
+                <td class="price-col text-end">13k</td>
+              </tr>
+              <tr>
+                <td>Pempek Tenggiri 180 gr</td>
+                <td class="price-col text-end">20k</td>
+              </tr>
+              <tr>
+                <td>Pempek Parang 250 gr</td>
+                <td class="price-col text-end">20k</td>
+              </tr>
+              <tr>
+                <td>Pempek Tenggiri 250 gr</td>
+                <td class="price-col text-end">30k</td>
+              </tr>
+              <tr>
+                <td>Pempek Kantin 500 gr</td>
+                <td class="price-col text-end">30k</td>
+              </tr>
+              <tr>
+                <td>Pempek Parang 500 gr</td>
+                <td class="price-col text-end">38k</td>
+              </tr>
+              <tr>
+                <td>Pempek Tenggiri 500 gr</td>
+                <td class="price-col text-end">55k</td>
+              </tr>
+
+              <tr>
+                <td colspan="2" class="fs-5 fw-bold pt-4">Pelengkap</td>
+              </tr>
+              <tr>
+                <td>Cuko 250 ML</td>
+                <td class="price-col text-end">20k</td>
               </tr>
             </tbody>
           </table>
-        </div>
-        <div class="text-center mt-4">
-          <p class="text-muted small">* bisa take-away atau makan di tempat</p>
-          <a href="menu.html" class="btn btn-dark-mono">Lihat Lengkap</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimony Section -->
-    <section id="testimony">
-      <div class="container">
-        <h2 class="section-title">Testimoni</h2>
-        <div class="divider"></div>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="testimony-card">
-              <div class="d-flex align-items-center mb-3">
-                <div>
-                  <h6 class="mb-0 fw-bold">Septina Prasastia</h6>
-                </div>
-              </div>
-              <p class="testimony-text">
-                "Mantap pempek nikmat... Mau makan sepuasnya sama kyk tahun
-                kmrin ah..."
-              </p>
-              <div class="text-warning small mt-2">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="testimony-card">
-              <div class="d-flex align-items-center mb-3">
-                <div>
-                  <h6 class="mb-0 fw-bold">Fachriza Nurulzahra</h6>
-                </div>
-              </div>
-              <p class="testimony-text">
-                "Pempek nya enak bangeeeett, beneran pempek asli palembang👍🏻"
-              </p>
-              <div class="text-warning small mt-2">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="testimony-card">
-              <div class="d-flex align-items-center mb-3">
-                <div>
-                  <h6 class="mb-0 fw-bold">Muhammad Alvaro Afkar</h6>
-                </div>
-              </div>
-              <p class="testimony-text">
-                "alhamdulillah, seger cukonyo.. pempeknyo terjangkau dengan
-                dompet rasonyo maknyus"
-              </p>
-              <div class="text-warning small mt-2">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-half"></i>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -280,15 +330,13 @@
                     d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
                   />
                 </svg>
-                0877-7273-5979
+                +62 877-2254-6986
               </li>
             </ul>
           </div>
         </div>
         <hr class="border-secondary mt-4 mb-3" />
-        <div
-          class="d-flex flex-wrap justify-content-between align-items-center"
-        >
+        <div class="d-flex flex-wrap justify-content-between align-items-center">
           <p class="small mb-0">© 2026 Pempek Ameera. All rights reserved.</p>
         </div>
       </div>
