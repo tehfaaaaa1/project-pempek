@@ -3,40 +3,289 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
+    <title>Pempek Ameera • Pempek Khas Palembang</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
-        <a
-          href="/"
-          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="assets/logo.jpeg"
+            alt="Pempek Ameera"
+            width="50"
+            height="50"
+        /></a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMain"
+          aria-controls="navbarMain"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <svg class="bi me-2" width="40" height="32" aria-hidden="true">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-          <span class="fs-4">Pempek Ameera</span>
-        </a>
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link active" aria-current="page"
-              >Beranda</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="menu.html" class="nav-link">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">Tentang Kami</a>
-          </li>
-          <li class="nav-item">
-            <a href="kontak.html" class="nav-link">Kontak</a>
-          </li>
-        </ul>
-      </header>
-    </div>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+          <a href="#menu" class="btn btn-outline-mono d-none d-lg-block"
+            >Order now</a
+          >
+        </div>
+      </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <h1 class="hero-title">Cita Rasa Autentik, Kualitas Premium</h1>
+            <p class="hero-sub">
+              Pempek Ameera hadir dengan perpaduan bahan berkualitas dan resep
+              khas untuk menciptakan rasa gurih, kenyal, dan nikmat yang sulit
+              dilupakan.
+            </p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="menu.html" class="btn btn-dark-mono">Jelajahi Menu</a>
+              <a href="about.html" class="btn btn-outline-mono">Tentang Kami</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="assets/hero.jpeg"
+              alt="presentasi makanan pempek"
+              class="img-fluid rounded-4 shadow-sm"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <div class="container">
+        <h2 class="section-title">Galeri</h2>
+        <div class="divider"></div>
+        <div class="row g-4">
+          <div class="col-6 col-md-4">
+            <img
+              src="assets/gallery-1.jpeg"
+              class="gallery-img"
+              alt="pempek ameera 1"
+            />
+          </div>
+          <div class="col-6 col-md-4">
+            <img
+              src="assets/gallery-2.jpeg"
+              class="gallery-img"
+              alt="pempek ameera 2"
+            />
+          </div>
+          <div class="col-6 col-md-4">
+            <img
+              src="assets/gallery-3.jpeg"
+              class="gallery-img"
+              alt="tekwan ameera"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+      <div class="container">
+        <h2 class="section-title">Menu</h2>
+        <div class="divider"></div>
+        <div class="table-responsive">
+          <table class="menu-table">
+            <thead>
+              <tr>
+                <th>Makanan</th>
+                <th class="text-end">Harga</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2" class="fs-5">Pempek Kantin</td>
+              </tr>
+              <tr>
+                <td>Paket Komplit isi 4</td>
+                <td class="price-col">10k</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="fs-5">Pempek Parang</td>
+              </tr>
+              <tr>
+                <td>Paket Komplit isi 4</td>
+                <td class="price-col">13k</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="fs-5">Pempek Tenggiri</td>
+              </tr>
+              <tr>
+                <td>Paket Komplit isi 4</td>
+                <td class="price-col">20k</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="text-center mt-4">
+          <p class="text-muted small">* bisa take-away atau makan di tempat</p>
+          <a href="#" class="btn btn-dark-mono">Pesan Online</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimony Section -->
+    <section id="testimony">
+      <div class="container">
+        <h2 class="section-title">Testimoni</h2>
+        <div class="divider"></div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="testimony-card">
+              <div class="d-flex align-items-center mb-3">
+                <div>
+                  <h6 class="mb-0 fw-bold">Septina Prasastia</h6>
+                </div>
+              </div>
+              <p class="testimony-text">
+                "Mantap pempek nikmat... Mau makan sepuasnya sama kyk tahun
+                kmrin ah..."
+              </p>
+              <div class="text-warning small mt-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimony-card">
+              <div class="d-flex align-items-center mb-3">
+                <div>
+                  <h6 class="mb-0 fw-bold">Fachriza Nurulzahra</h6>
+                </div>
+              </div>
+              <p class="testimony-text">
+                "Pempek nya enak bangeeeett, beneran pempek asli palembang👍🏻"
+              </p>
+              <div class="text-warning small mt-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimony-card">
+              <div class="d-flex align-items-center mb-3">
+                <div>
+                  <h6 class="mb-0 fw-bold">Muhammad Alvaro Afkar</h6>
+                </div>
+              </div>
+              <p class="testimony-text">
+                "alhamdulillah, seger cukonyo.. pempeknyo terjangkau dengan dompet rasonyo maknyus"
+              </p>
+              <div class="text-warning small mt-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-half"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer pt-5 pb-4">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-5">
+            <h4 class="text-white fw-bold">Pempek Ameer@</h4>
+            <p class="small" style="max-width: 300px">Pempek Khas Palembang</p>
+            <div class="d-flex gap-3 mt-3">
+              <a href="#" class="text-white fs-5"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="text-white fs-5"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a href="#" class="text-white fs-5"
+                ><i class="bi bi-facebook"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h6 class="text-white fw-semibold">Waktu buka</h6>
+            <ul class="list-unstyled small">
+              <li>Minggu-Kamis: 8.00 – 22.00 WIB</li>
+              <li>Jumat: 8.00 – 11.15 & 13.00 - 22.00 WIB</li>
+              <li>Sabtu: 08.00 – 23.00 WIB</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6 class="text-white fw-semibold">Contact</h6>
+            <ul class="list-unstyled small">
+              <li>
+                <i class="bi bi-geo-alt me-1"></i> Jl. Rw. Taman Jl. Kp. Rau
+                No.36, RT.01/RW.03, Mekarwangi, Tanah Sareal, Kota Bogor, Jawa
+                Barat 16168
+              </li>
+              <li><i class="bi bi-telephone me-1"></i> 0877-7273-5979</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-secondary mt-4 mb-3" />
+        <div
+          class="d-flex flex-wrap justify-content-between align-items-center"
+        >
+          <p class="small mb-0">© 2026 Pempek Ameera. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      (function () {
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(".nav-link");
+        window.addEventListener("scroll", () => {
+          let current = "";
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop - 100;
+            if (window.pageYOffset >= sectionTop) {
+              current = section.getAttribute("id");
+            }
+          });
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${current}`) {
+              link.classList.add("active");
+            }
+          });
+        });
+      })();
+    </script>
   </body>
 </html>

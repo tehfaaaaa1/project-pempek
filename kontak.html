@@ -3,36 +3,340 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
+    <title>Kontak | Pempek Ameera • Pempek Khas Palembang</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
-        <a
-          href="/"
-          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="assets/logo.jpeg"
+            alt="Pempek Ameera"
+            width="50"
+            height="50"
+        /></a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMain"
+          aria-controls="navbarMain"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <svg class="bi me-2" width="40" height="32" aria-hidden="true">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-          <span class="fs-4">Pempek Ameera</span>
-        </a>
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Beranda</a>
-          </li>
-          <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">Tentang Kami</a>
-          </li>
-          <li class="nav-item">
-            <a href="kontak.html" class="nav-link active" aria-current="page">Kontak</a>
-          </li>
-        </ul>
-      </header>
-    </div>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+          <a href="#menu" class="btn btn-outline-mono d-none d-lg-block"
+            >Order now</a
+          >
+        </div>
+      </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <h1 class="hero-title">Pempek Khas Palembang</h1>
+            <p class="hero-sub">
+              <!-- Ganti ni -->
+              Dapatkan sekarang di toko Anda
+            </p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="menu.html" class="btn btn-dark-mono">Jelajahi Menu</a>
+              <a href="about.html" class="btn btn-outline-mono">Tentang Kami</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="assets/hero-img.jpeg"
+              alt="presentasi makanan pempek"
+              class="img-fluid rounded-4 shadow-sm"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section (now exactly 4 images) -->
+    <section id="gallery">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <div class="divider"></div>
+        <div class="row g-4">
+          <div class="col-6 col-md-3">
+            <img
+              src=""
+              class="gallery-img"
+              alt="charcoal pasta"
+            />
+          </div>
+          <div class="col-6 col-md-3">
+            <img
+              src=""
+              class="gallery-img"
+              alt="black rice bowl"
+            />
+          </div>
+          <div class="col-6 col-md-3">
+            <img
+              src=""
+              class="gallery-img"
+              alt="midnight cake"
+            />
+          </div>
+          <div class="col-6 col-md-3">
+            <img
+              src=""
+              class="gallery-img"
+              alt="sesame latte"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section (table with name & price only) -->
+    <section id="menu">
+      <div class="container">
+        <h2 class="section-title">Menu</h2>
+        <div class="divider"></div>
+        <div class="table-responsive">
+          <table class="menu-table">
+            <thead>
+              <tr>
+                <th>Dish</th>
+                <th class="text-end">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cloud Eggs</td>
+                <td class="price-col">$12</td>
+              </tr>
+              <tr>
+                <td>Black Sesame Latte</td>
+                <td class="price-col">$6.5</td>
+              </tr>
+              <tr>
+                <td>Squid Ink Pasta</td>
+                <td class="price-col">$18</td>
+              </tr>
+              <tr>
+                <td>Midnight Cake</td>
+                <td class="price-col">$9</td>
+              </tr>
+              <tr>
+                <td>Tofu Black</td>
+                <td class="price-col">$14</td>
+              </tr>
+              <tr>
+                <td>Charcoal Bun</td>
+                <td class="price-col">$11</td>
+              </tr>
+              <tr>
+                <td>Mono Bowl</td>
+                <td class="price-col">$15</td>
+              </tr>
+              <tr>
+                <td>White Miso Soup</td>
+                <td class="price-col">$8</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="text-center mt-4">
+          <p class="text-muted small">
+            * all items available for dine-in or takeaway
+          </p>
+          <a href="#" class="btn btn-dark-mono">Order Online</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimony Section -->
+    <section id="testimony">
+      <div class="container">
+        <h2 class="section-title">What guests say</h2>
+        <div class="divider"></div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="testimony-card">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="https://placehold.co/48x48/1a1a1a/ffffff?text=JD"
+                  alt="avatar"
+                  class="rounded-circle me-3"
+                  style="filter: grayscale(100%)"
+                />
+                <div>
+                  <h6 class="mb-0 fw-bold">Jordan D.</h6>
+                  <small class="text-muted">food critic</small>
+                </div>
+              </div>
+              <p class="testimony-text">
+                "The monochrome concept is brilliantly executed. Every bite
+                feels intentional. The squid ink pasta is a must."
+              </p>
+              <div class="text-warning small mt-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimony-card">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="https://placehold.co/48x48/333333/ffffff?text=MC"
+                  alt="avatar"
+                  class="rounded-circle me-3"
+                  style="filter: grayscale(100%)"
+                />
+                <div>
+                  <h6 class="mb-0 fw-bold">Maria C.</h6>
+                  <small class="text-muted">local guide</small>
+                </div>
+              </div>
+              <p class="testimony-text">
+                "Aesthetic and delicious. The black sesame latte changed my
+                mornings. Minimal yet cozy atmosphere."
+              </p>
+              <div class="text-warning small mt-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimony-card">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="https://placehold.co/48x48/4d4d4d/ffffff?text=RL"
+                  alt="avatar"
+                  class="rounded-circle me-3"
+                  style="filter: grayscale(100%)"
+                />
+                <div>
+                  <h6 class="mb-0 fw-bold">Ravi L.</h6>
+                  <small class="text-muted">regular guest</small>
+                </div>
+              </div>
+              <p class="testimony-text">
+                "MonoBite proves that less is more. The cloud eggs are heavenly.
+                I come here every weekend."
+              </p>
+              <div class="text-warning small mt-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-half"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer pt-5 pb-4">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-5">
+            <h4 class="text-white fw-bold">
+              Pempek Ameer@
+            </h4>
+            <p class="small" style="max-width: 300px">
+              Pempek Khas Palembang
+            </p>
+            <div class="d-flex gap-3 mt-3">
+              <a href="#" class="text-white fs-5"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="text-white fs-5"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a href="#" class="text-white fs-5"
+                ><i class="bi bi-facebook"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h6 class="text-white fw-semibold">Waktu buka</h6>
+            <ul class="list-unstyled small">
+              <li>Minggu-Kamis: 8.00 – 22.00 WIB</li>
+              <li>Jumat: 8.00 – 11.15 & 13.00 - 22.00 WIB</li>
+              <li>Sabtu: 08.00 – 23.00 WIB</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6 class="text-white fw-semibold">Contact</h6>
+            <ul class="list-unstyled small">
+              <li>
+                <i class="bi bi-geo-alt me-1"></i> Jl. Rw. Taman Jl. Kp. Rau
+                No.36, RT.01/RW.03, Mekarwangi, Tanah Sareal, Kota Bogor, Jawa
+                Barat 16168
+              </li>
+              <li><i class="bi bi-telephone me-1"></i> 0877-7273-5979</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-secondary mt-4 mb-3" />
+        <div
+          class="d-flex flex-wrap justify-content-between align-items-center"
+        >
+          <p class="small mb-0">© 2025 MonoBite. All rights reserved.</p>
+          <div class="d-flex gap-3 small">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Accessibility</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      (function () {
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(".nav-link");
+        window.addEventListener("scroll", () => {
+          let current = "";
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop - 100;
+            if (window.pageYOffset >= sectionTop) {
+              current = section.getAttribute("id");
+            }
+          });
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${current}`) {
+              link.classList.add("active");
+            }
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
