@@ -7,30 +7,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <style>
-       .mastercard {
-        border: none;
-        border-radius: 12px;
-        overflow: hidden;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      
-      .mastercard:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
-      }
-
-      .mastercard img {
-        height: 200px;
-        object-fit: cover;
-      }
-
-      .price-tag {
-        font-weight: 700;
-        font-size: 1.1rem;
-        color: #212529;
-      }
-    </style>
   </head>
   <body>
 
@@ -78,7 +54,8 @@
    <section style="padding-top: 7rem;">
       <div class="container">
         <div class="mx-auto" style="max-width: 900px;">
-          <h3 class="fw-bold mb-4 text-center">Rekomendasi Spesial</h3>
+          <h1 class="fw-bold mb-4 text-center">Rekomendasi Spesial</h1>
+          <div class="divider mx-auto"></div>
           <div class="row g-4">
             <div class="col-12 col-md-6">
               <div class="card mastercard shadow-sm h-100">
@@ -118,7 +95,7 @@
      <!-- Menu Section -->
     <section id="menu">
       <div class="container">
-        <h2 class="section-title">Menu</h2>
+        <h3 class="section-title">Menu</h3>
         <div class="divider"></div>
         <div class="table-responsive">
           <table class="menu-table">
@@ -344,26 +321,5 @@
 
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script>
-      (function () {
-        const sections = document.querySelectorAll("section[id]");
-        const navLinks = document.querySelectorAll(".nav-link");
-        window.addEventListener("scroll", () => {
-          let current = "";
-          sections.forEach((section) => {
-            const sectionTop = section.offsetTop - 100;
-            if (window.pageYOffset >= sectionTop) {
-              current = section.getAttribute("id");
-            }
-          });
-          navLinks.forEach((link) => {
-            link.classList.remove("active");
-            if (link.getAttribute("href") === `#${current}`) {
-              link.classList.add("active");
-            }
-          });
-        });
-      })();
-    </script>
   </body>
 </html>
